@@ -25,7 +25,7 @@ const Register = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(register(formData))
-   
+
   };
 
   return (
