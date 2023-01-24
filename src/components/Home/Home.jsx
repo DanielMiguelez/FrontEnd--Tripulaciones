@@ -1,8 +1,9 @@
 import React from 'react'
 import Request from "../Request/Request"
 import New from "../New/New"
-import Activity from "../Activity/Activity"
+
 import Carousel from '../Carousel/Carousel'
+import Activity from '../Activities/Activity/Activity'
 
 const Home = () => {
   return (

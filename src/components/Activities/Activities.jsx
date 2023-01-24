@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { getAllPosts, reset } from "../../features/posts/postsSlice";
-import "./Posts.scss";
+import Activity from '../Activities/Activity/Activity'
 
 const Activities = () => {
   const dispatch = useDispatch();
@@ -12,7 +11,7 @@ const Activities = () => {
 
   return (
     <div>
-      <h1>Posts</h1>
+      <h1>Activities</h1>
       <div>
       <Activity />
       </div>

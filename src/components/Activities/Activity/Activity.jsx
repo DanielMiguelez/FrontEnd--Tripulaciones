@@ -1,15 +1,12 @@
 import React from 'react'
-import Activity from './Activity/Activity'
 
-const Activity = () => {
+const ActivityY = () => {
   return (
     <div>
         <h1>Activities</h1>
-        <Activity/>
-
-
+    
     </div>
   )
 }
 
-export default Activity
+export default ActivityY
