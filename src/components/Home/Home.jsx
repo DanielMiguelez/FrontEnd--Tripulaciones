@@ -1,16 +1,17 @@
 import React from 'react'
-import Request from "../Request/Request"
-import New from "../New/New"
 import Carousel from '../Carousel/Carousel'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
       <Carousel />
       <p>Espacio de difusión y colaboración entre los vecinos del barrio y su Asociación.</p>
-      < Request />
-      < New />
   
+      <Link to="/request">Peticiones</Link>
+      <Link to="/new">Noticias</Link>
+      <Link to="/activities">Actividades</Link>
+      
     </div>
   )
 }
