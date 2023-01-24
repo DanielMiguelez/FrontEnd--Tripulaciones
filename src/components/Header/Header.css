@@ -1,7 +1,37 @@
-.header{
+.header {
     display: flex;
     justify-content: space-around;
+    text-align: center;
     height: 100px;
     width: 390px;
-    background-color: #3D5656
+    background-color: #3D5656;
+}
+
+.text {
+    position: absolute;
+    width: 235px;
+    height: 28px;
+    left: 78px;
+    top: 52px;
+    font-family: 'P22 Mackinac Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #FAFAFA;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    color: #FAFAFA;
+    position: absolute;
+    left: 15.62%;
+    right: 15.62%;
+    /* top: 25%; */
+    /* bottom: 25%; */
+    /* border: 2px solid; */
 }

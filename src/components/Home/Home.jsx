@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div>
-      <Carousel />
+      <Carousel/>
       <p>Espacio de difusión y colaboración entre los vecinos del barrio y su Asociación.</p>
   
       <Link to="/request">Peticiones</Link>
