@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../features/auth/authSlice";
-import "./Login.scss"
+// import "./Login.scss"
 
 const Login = () => {
 
@@ -43,24 +43,25 @@ const Login = () => {
 
     e.preventDefault();
 
-    navigate("/register");}
+    navigate("/register");
+  }
 
   return (
 
     <div className='login-container'>
 
-      <h2 className='login-h2'>Bievenido a Veins Campanar</h2>
+      <h2 className='login-h2'>Bienvenido a Veïns Campanar</h2>
 
       <span className='sub-login'>Accede o registrate para continuar</span>
 
       <form className='login-form' onSubmit={onSubmit}>
         <div className='email-box'>
-        <input className="email" type="email" name="email" value={email} onChange={onChange} />
+          <input className="email" type="email" name="email" value={email} onChange={onChange} />
         </div>
         <div className='password-box'>
           <span>Example@example.com</span>
           <label for="password">Contraseña</label>
-          <input className="password" type="password" name="password" value={password} onChange={onChange}/>
+          <input className="password" type="password" name="password" value={password} onChange={onChange} />
         </div>
 
         <div className='login-buttons'>
@@ -77,7 +78,8 @@ const Login = () => {
 
     </div>
 
-  )}
+  )
+}
 
 
 
