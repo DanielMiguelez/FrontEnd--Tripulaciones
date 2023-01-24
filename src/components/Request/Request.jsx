@@ -2,7 +2,7 @@ import React from 'react'
 
 const Request = () => {
   return (
-    <div>Request
+    <div className='request'>Request
         {/* formulario de entrada */}
     </div>
   )

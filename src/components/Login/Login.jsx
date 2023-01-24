@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import { login } from "../../features/auth/authSlice";
 import "./Login.scss"
 
 const Login = () => {
+
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
 
@@ -36,6 +39,12 @@ const Login = () => {
 
   }
 
+  const onCreate = (e) => {
+
+    e.preventDefault();
+
+    navigate("/register");}
+
   return (
 
     <div className='login-container'>
@@ -44,33 +53,32 @@ const Login = () => {
 
       <span className='sub-login'>Accede o registrate para continuar</span>
 
-      <form className='login-form'>
+      <form className='login-form' onSubmit={onSubmit}>
         <div className='email-box'>
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" />
+        <input className="email" type="email" name="email" value={email} onChange={onChange} />
         </div>
         <div className='password-box'>
           <span>Example@example.com</span>
           <label for="password">Contraseña</label>
-          <input type="password" id="password" name="password" />
+          <input className="password" type="password" name="password" value={password} onChange={onChange}/>
+        </div>
+
+        <div className='login-buttons'>
+
+          <button className='access-button'>Acceder</button>
+
+          <button className='createAcc-button' onClick={onCreate}>Crear cuenta</button>
+
         </div>
       </form>
 
-      <div className='login-buttons'>
-
-        <button className='access-button'>Acceder</button>
-
-        <button className='createAcc-button'>Crear cuenta</button>
-
-      </div>
-
-    <span className='pass-recover'>¿Olvidaste la contraseña?</span>
-    <span className='pass-recovery'>Recupérala aquí</span>
+      <span className='pass-recover'>¿Olvidaste la contraseña?</span>
+      <span className='pass-recovery'>Recupérala aquí</span>
 
     </div>
 
-  )
+  )}
 
-}
+
 
 export default Login
