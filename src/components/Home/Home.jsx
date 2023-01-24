@@ -1,7 +1,6 @@
 import React from 'react'
 import Request from "../Request/Request"
 import New from "../New/New"
-
 import Carousel from '../Carousel/Carousel'
 import Activity from '../Activities/Activity/Activity'
 
