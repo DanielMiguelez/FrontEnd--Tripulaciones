@@ -9,6 +9,9 @@ const CarouselHome = () => {
                 <div className="ft1" />
                 <div className="ft2" />
                 <div className="ft3" />
+                <div className="ft4" />
+                <div className="ft5" />
+                <div className="ft6" />
               </Carousel>
         </div>
     )

@@ -1,25 +1,42 @@
 .carousel {
     margin: 15px;
-    opacity: .5;
     cursor: pointer;
 }
 
 .ft1 {
-    background-image: url(../../../assets/fullstack.png);
+    background-image: url(../../../assets/nathan-dumlao-YUzSjKG9QmU-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 30vh;
 }
 
 .ft2 {
-    background-image: url(../../../assets/image.png);
+    background-image: url(../../../assets/Campanar.jpeg);
     background-size: cover;
     background-position: center;
     height: 30vh;
 }
 
 .ft3 {
-    background-image: url(../../../assets/Sin\ título.png);
+    background-image: url(../../../assets/parque.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.ft4 {
+    background-image: url(../../../assets/ALQUERIA-PALLARDO-RESTAURADA.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.ft5 {
+    background-image: url(../../../assets/pexels-nadin-sh-11776362.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+.ft6 {
+    background-image: url(../../../assets/doina-gavrilov-vYeEwPOGAxI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 30vh;
