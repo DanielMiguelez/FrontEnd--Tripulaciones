@@ -1,0 +1,26 @@
+.carousel {
+    margin: 15px;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.ft1 {
+    background-image: url(../../../assets/fullstack.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.ft2 {
+    background-image: url(../../../assets/image.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
+
+.ft3 {
+    background-image: url(../../../assets/Sin\ título.png);
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+}
