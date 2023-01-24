@@ -1,6 +1,8 @@
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     height: 100px;
     width: 390px;
@@ -8,11 +10,15 @@
 }
 
 .text {
+    display: flex;
+    gap: 10px;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid greenyellow; */
     position: absolute;
     width: 235px;
     height: 28px;
-    left: 78px;
-    top: 52px;
     font-family: 'P22 Mackinac Pro';
     font-style: normal;
     font-weight: 700;
@@ -20,18 +26,4 @@
     line-height: 28px;
     text-align: center;
     color: #FAFAFA;
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    color: #FAFAFA;
-    position: absolute;
-    left: 15.62%;
-    right: 15.62%;
-    /* top: 25%; */
-    /* bottom: 25%; */
-    /* border: 2px solid; */
 }

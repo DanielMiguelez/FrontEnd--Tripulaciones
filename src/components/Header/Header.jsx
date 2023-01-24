@@ -9,8 +9,6 @@ const Header = () => {
     <div className='header'>
       <div className='text'>
         Veïns Campanar
-      </div>
-      <div className='hamburger'>
         <MenuOutlined />
       </div>
     </div>
