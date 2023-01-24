@@ -21,7 +21,6 @@ function App() {
           <Route path="/request" element={<Request />} />
           <Route path="/new" element={<New />} />
           <Route path="/activities" element={<Activities />} />
-
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
