@@ -6,7 +6,6 @@ const Activities = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getAllActivities());
-    dispatch(reset());
   }, []);
 
   return (
