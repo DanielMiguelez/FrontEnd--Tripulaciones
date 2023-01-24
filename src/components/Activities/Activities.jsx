@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Activity from '../Activities/Activity/Activity'
-import {getAllActivities} from '../../features/activities/activitySlice'
 import "./Activities.css";
 
 const Activities = () => {
