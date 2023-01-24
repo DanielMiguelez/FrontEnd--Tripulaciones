@@ -1,8 +1,14 @@
 import React from 'react'
+import Activity from './Activity/Activity'
 
 const Activity = () => {
   return (
-    <div>Activity</div>
+    <div>
+        <h1>Activities</h1>
+        <Activity/>
+
+
+    </div>
   )
 }
 
