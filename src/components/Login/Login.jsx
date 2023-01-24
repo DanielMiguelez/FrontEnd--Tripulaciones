@@ -43,7 +43,8 @@ const Login = () => {
 
     e.preventDefault();
 
-    navigate("/register");}
+    navigate("/register");
+  }
 
   return (
 
@@ -55,12 +56,12 @@ const Login = () => {
 
       <form className='login-form' onSubmit={onSubmit}>
         <div className='email-box'>
-        <input className="email" type="email" name="email" value={email} onChange={onChange} />
+          <input className="email" type="email" name="email" value={email} onChange={onChange} />
         </div>
         <div className='password-box'>
           <span>Example@example.com</span>
           <label for="password">Contraseña</label>
-          <input className="password" type="password" name="password" value={password} onChange={onChange}/>
+          <input className="password" type="password" name="password" value={password} onChange={onChange} />
         </div>
 
         <div className='login-buttons'>
@@ -77,8 +78,7 @@ const Login = () => {
 
     </div>
 
-  )}
-
-
+  )
+}
 
 export default Login
