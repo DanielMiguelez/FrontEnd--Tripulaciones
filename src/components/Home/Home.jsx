@@ -13,7 +13,7 @@ const Home = () => {
           Asociación.
         </p>
       </div>
-   
+
       <div className="iconos-home">
         <Link to="*" > <CommentOutlined style={{ fontSize: '250%' }} /> <br /> <span>Peticiones</span></Link>
         <Link to="/news"> <FormOutlined style={{ fontSize: '250%' }} /> <br /> <span>Noticias</span> </Link>

@@ -9,9 +9,9 @@
 
 .text {
     display: flex;
-    margin-right: 1.5em;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-right: 1.5em;
     gap: 50px;
     width: 85%;
     font-family: 'M PLUS Rounded 1c', sans-serif;
