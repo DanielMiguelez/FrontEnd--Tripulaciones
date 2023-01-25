@@ -2,8 +2,8 @@ import React from 'react'
 
 const Request = () => {
   return (
-    <div>Request
-        {/* formulario de entrada */}
+    <div className='request'>Request
+     
     </div>
   )
 }
