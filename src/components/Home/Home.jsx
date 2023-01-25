@@ -13,10 +13,10 @@ const Home = () => {
           Asociación.
         </p>
       </div>
-
+   
       <div className="iconos-home">
-        <Link to="/request" > <CommentOutlined style={{ fontSize: '250%' }} /> <br /> <span>Peticiones</span></Link>
-        <Link to="/new"> <FormOutlined style={{ fontSize: '250%' }} /> <br /> <span>Noticias</span> </Link>
+        <Link to="*" > <CommentOutlined style={{ fontSize: '250%' }} /> <br /> <span>Peticiones</span></Link>
+        <Link to="*"> <FormOutlined style={{ fontSize: '250%' }} /> <br /> <span>Noticias</span> </Link>
         <Link to="/activities"> <CalendarOutlined style={{ fontSize: '250%', border: '1px' }} /> <br /> <span>Actividades </span> </Link>
       </div>
     </div>
