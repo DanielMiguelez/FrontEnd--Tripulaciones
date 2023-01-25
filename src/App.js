@@ -8,6 +8,7 @@ import New from "./components/New/New";
 import Activities from "./components/Activities/Activities";
 import Request from "./components/Request/Request";
 import Header from "./components/Header/Header";
+import NotFound from "./components/NotFound/NotFound";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/new" element={<New />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>
