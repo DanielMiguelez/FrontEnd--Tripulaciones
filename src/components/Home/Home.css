@@ -1,53 +1,34 @@
-@import "../../App.css";
-
-* {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+html{
+    background-color: #afc1ce;
 }
-
-html {
-    background-color: #FAFAFA;
-
-}
-
-.iconos-home {
+.iconos-home{
     margin-top: 16vh;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #3D5656
+    
 }
-
-span {
+span{
     text-align: left;
     margin: 2vh;
     font-weight: 400;
     font-size: 15px;
 }
-
-p {
-    text-align: center;
-    top: 516px;
-    left: 35px;
-    height: 48px;
-    line-height: 24px;
-    width: 321;
+p{
+    text-align: left;
     margin: 3vh;
     margin-top: 50px;
     font-weight: 400;
-    font-size: 16px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    color: #3D5656;
+    font-size: 15px;
 }
-
-svg {
+svg{
+    border: 1px solid rgb(0, 0, 0);
     padding: 15px;
     border-radius: 50px;
-    color: #FED049;
-    background-color: #3D4750;
+    color: rgb(216, 152, 49);
+    background-color: rgb(132, 113, 150);
 }
-
-a {
+a{
     all: unset;
-    /* margin-bottom: 90px; */
 }

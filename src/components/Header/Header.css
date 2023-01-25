@@ -9,11 +9,11 @@
 
 .text {
     display: flex;
-    /* margin-left: 3.5em; */
+    margin-right: 1.5em;
     justify-content: space-around;
     align-items: center;
     gap: 50px;
-    width: 235px;
+    width: 85%;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-style: normal;
     font-weight: 700;
