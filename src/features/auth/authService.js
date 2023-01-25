@@ -4,16 +4,10 @@ const API_URL = "http://localhost:8000";
 const user = JSON.parse(localStorage.getItem("user"));
 
 const register = async (userData) => {
-
-  try {
     
     const res = await axios.post(API_URL + "/users/createUser", userData);
     return res.data;
     
-  } catch (error) {
-    
-  }
-
 }
 
 const login = async (user) => {

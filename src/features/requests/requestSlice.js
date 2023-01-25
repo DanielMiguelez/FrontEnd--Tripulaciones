@@ -17,22 +17,30 @@ export const getAll = createAsyncThunk(
     }
 );
 
-export const activitySlice = createSlice({
-    name: "activities",
+export const createRequest = createAsyncThunk(
+    "requests/createRequest",
+    async () => {
+        try {
+            return await requestService.createRequest();
+        } catch (error) {
+            console.error(error);
+        }
+    }
+);
+
+export const requestsSlice = createSlice({
+    name: "requests",
     initialState,
     reducers: {
 
     },
 
     extraReducers: (builder) => {
-        builder.addCase(getAllActivities.fulfilled, (state, action) => {
+        builder.addCase(getAll.fulfilled, (state, action) => {
             state.activities = action.payload;
             state.isLoading = false
-        });
-        builder.addCase(getAllActivities.pending, (state, action) => {
-            state.isLoading = true;
         });
     },
 });
 
-export default activitySlice.reducer;
+export default requestsSlice.reducer;
