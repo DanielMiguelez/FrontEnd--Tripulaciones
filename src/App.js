@@ -10,8 +10,8 @@ import Activities from "./components/Activities/Activities";
 import Request from "./components/Request/Request";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
-
 import News from "./components/News/News";
+import ActivityDetail from "./components/ActivityDetail/ActivityDetail";
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/news" element={<News/>} />
           <Route path="/login" element={<Login />} />
+          <Route path="/activity/:id" element={<ActivityDetail />} />
           <Route path="/profile/:id" element={<Profile/>} />
           <Route path="/updateprofile/:id" element={<EditProfile/>} />
           <Route path="*" element={<NotFound />} />
