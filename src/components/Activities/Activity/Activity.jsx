@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getAllActivities } from "../../../features/activities/activitySlice";
-
+import "./Activity.css"
 
 const Activity = () => {
   const { activities, isLoading } = useSelector((state) => state.activities);
@@ -26,10 +26,14 @@ const Activity = () => {
     
     return (
       <div className="activity">
-        <p>{a.title}</p>
-        <p>{a.image}</p> 
-        <p>{a.body}</p>
-        <p>{a.address}</p>
+        {a.image} 
+        <br />
+        <br />
+        {a.title}
+        <br />
+        {a.body}
+        <br />
+        {a.address}
       </div>
     );
   });
