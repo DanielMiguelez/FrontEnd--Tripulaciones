@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 12vh;
-    width:100%;
+    width: 100%;
     background-color: #3D5656;
 }
 
@@ -12,9 +12,8 @@
     margin-left: 3.5em;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid greenyellow; */
     width: 235px;
-    font-family: 'P22 Mackinac Pro';
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;

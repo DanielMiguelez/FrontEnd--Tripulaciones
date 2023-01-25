@@ -2,20 +2,22 @@ import React from "react";
 import Carousel from "../Carousel/Carousel";
 import { Link } from "react-router-dom";
 import "./Home.css"
-import { CommentOutlined, FormOutlined, CalendarOutlined  } from '@ant-design/icons';
+import { CommentOutlined, FormOutlined, CalendarOutlined } from '@ant-design/icons';
 const Home = () => {
   return (
     <div>
       <Carousel />
-      <p>
-        Espacio de difusión y colaboración entre los vecinos del barrio y su
-        Asociación.
-      </p>
+      <div className="text-home">
+        <p>
+          Espacio de difusión y colaboración entre los vecinos del barrio y su
+          Asociación.
+        </p>
+      </div>
 
       <div className="iconos-home">
-        <Link to="/request" > <CommentOutlined style={{ fontSize: '250%'}}/> <br /> <span>Peticiones</span></Link>
-        <Link to="/new"> <FormOutlined style={{ fontSize: '250%'}}/> <br /> <span>Noticias</span> </Link>
-        <Link to="/activities"> <CalendarOutlined style={{ fontSize: '250%', border:'1px'} }/> <br /> <span>Actividades </span> </Link>
+        <Link to="/request" > <CommentOutlined style={{ fontSize: '250%' }} /> <br /> <span>Peticiones</span></Link>
+        <Link to="/new"> <FormOutlined style={{ fontSize: '250%' }} /> <br /> <span>Noticias</span> </Link>
+        <Link to="/activities"> <CalendarOutlined style={{ fontSize: '250%', border: '1px' }} /> <br /> <span>Actividades </span> </Link>
       </div>
     </div>
   );

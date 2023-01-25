@@ -1,6 +1,7 @@
 .carousel {
     margin: 0px;
     cursor: pointer;
+ 
 }
 
 .ft1 {
@@ -23,18 +24,21 @@
     background-position: center;
     height: 40vh;
 }
+
 .ft4 {
     background-image: url(../../../assets/ALQUERIA-PALLARDO-RESTAURADA.jpeg);
     background-size: cover;
     background-position: center;
     height: 40vh;
 }
+
 .ft5 {
     background-image: url(../../../assets/pexels-nadin-sh-11776362.jpg);
     background-size: cover;
     background-position: center;
     height: 40vh;
 }
+
 .ft6 {
     background-image: url(../../../assets/doina-gavrilov-vYeEwPOGAxI-unsplash.jpg);
     background-size: cover;
