@@ -19,9 +19,9 @@ export const getAll = createAsyncThunk(
 
 export const createRequest = createAsyncThunk(
     "requests/createRequest",
-    async () => {
+    async (test) => {
         try {
-            return await requestService.createRequest();
+            return await requestService.createRequest(test);
         } catch (error) {
             console.error(error);
         }

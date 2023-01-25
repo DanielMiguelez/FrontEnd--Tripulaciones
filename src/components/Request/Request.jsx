@@ -12,13 +12,14 @@ const Request = () => {
   const onSubmit = (event) => {
     
     event.preventDefault();
-
+    
     const formData = new FormData(event.target);
-
+    
     const requestCreated = Object.fromEntries(formData.entries());
-
-    const test = { id, requestCreated }
-
+    if (event.target.image.files[0]) formData.set('image', event.target.image.files[0]);
+    
+    const test = { id,requestCreated }
+    
     console.log(test)
 
     dispatch(createRequest(test));
@@ -32,14 +33,10 @@ const Request = () => {
         <form onSubmit={onSubmit}>
 
        
-          <input className="name" type="text" name="name"  placeholder="Añadir un título" />
+          <input className="name" type="text" name="title"  placeholder="Añadir un título" />
           
 
-          <input
-            type="text"
-            name="requestbody"
-            placeholder="Describir los detalles de tu petición"
-          />
+          <textarea rows={4} className="textarea" name="body" resize="none"/>
 
           <br />
 
@@ -52,7 +49,7 @@ const Request = () => {
             placeholder="Añadir ubicación"
           />
           <br />
-          <button type="submit">Registrate</button>
+          <button type="submit">Crear</button>
         </form>
       </div>
     

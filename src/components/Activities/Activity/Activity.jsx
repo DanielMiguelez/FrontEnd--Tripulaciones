@@ -20,6 +20,7 @@ const Activity = () => {
   console.log(activities)
 
   const activity = activities.map((a) => {
+    
     if (isLoading){
       return <h1>cargando...</h1>
     }

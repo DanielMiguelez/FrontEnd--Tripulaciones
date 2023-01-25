@@ -10,7 +10,7 @@ const getAll = async () => {
 
 const createRequest = async (test) => {
 
-        const res = await axios.post(API_URL + "/requests/createRequest" + test.id, test.requestCreated, {
+        const res = await axios.post(API_URL + "/requests/createRequest/" + test.id, test.requestCreated, {
 
             headers: {
 
