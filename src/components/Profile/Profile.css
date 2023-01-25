@@ -1,0 +1,21 @@
+.profile-name{
+font-family: "Proxima Nova";
+Font-style: "Semibold";
+Font-size: 16px;
+Line-height: 24px;
+Vertical-align: Top;
+Fill: Solid #3D4750;
+}
+
+.profile-view{
+    display: flex;
+    flex: column;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info{
+    display: flex;
+    flex-direction: column;
+}

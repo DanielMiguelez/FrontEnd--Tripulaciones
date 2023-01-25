@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { login } from "../../features/auth/authSlice";
-import "./Login.scss"
+import "./Login.css"
 
 const Login = () => {
 
@@ -36,7 +36,7 @@ const Login = () => {
 
     e.preventDefault()
     dispatch(login(formData));
-
+    navigate("/profile");
   }
 
   const onCreate = (e) => {
@@ -50,12 +50,13 @@ const Login = () => {
 
     <div className='login-container'>
 
-      <h2 className='login-h2'>Bievenido a Veins Campanar</h2>
+      <h2 className='login-h2'>Bienvenido a Veins Campanar</h2>
 
       <span className='sub-login'>Accede o registrate para continuar</span>
 
       <form className='login-form' onSubmit={onSubmit}>
         <div className='email-box'>
+          <label for="email">Email</label>
           <input className="email" type="email" name="email" value={email} onChange={onChange} />
         </div>
         <div className='password-box'>

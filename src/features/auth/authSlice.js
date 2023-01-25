@@ -35,15 +35,43 @@ export const login = createAsyncThunk("auth/login", async (user) => {
 
 });
 
-export const profile = createAsyncThunk("auth/profile", async () => {
+export const profile = createAsyncThunk("auth/profile", async (id) => {
 
   try {
 
-    return await authService.profile(user);
+    return await authService.profile(id);
 
   } catch (error) {
 
     console.error(error);
+
+  }
+
+});
+
+export const updateProfile = createAsyncThunk("auth/updateProfile", async (id) => {
+
+  try {
+
+    return await authService.updateProfile(id);
+
+  } catch (error) {
+
+    console.error(error);
+
+  }
+
+});
+
+export const logout = createAsyncThunk("auth/logout", async () => {
+
+  try {
+
+      return await authService.logout();
+
+  } catch (error) {
+
+      console.error(error);
 
   }
 
@@ -75,13 +103,6 @@ export const authSlice = createSlice({
 
       })
 
-      .addCase(profile.fulfilled, (state, action) => {
-
-        state.isSuccess = true;
-
-        state.user = action.payload;
-
-    });
   },
 });
 
