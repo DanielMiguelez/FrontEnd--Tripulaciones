@@ -9,6 +9,18 @@ const initialState = {
   message: "",
 };
 
+export const register = createAsyncThunk(
+  "auth/register",
+  async (user, thunkAPI) => {
+    try {
+      return await authService.register(user);
+    } catch (error) {
+      const message = error.response.data.msg;
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 export const login = createAsyncThunk("auth/login", async (user) => {
 
   try {
@@ -23,25 +35,74 @@ export const login = createAsyncThunk("auth/login", async (user) => {
 
 });
 
-export const register = createAsyncThunk(
-  "auth/register",
-  async (user, thunkAPI) => {
-    try {
-      return await authService.register(user);
-    } catch (error) {
-      const message = error.response.data.msg;
-      return thunkAPI.rejectWithValue(message);
-    }
+export const profile = createAsyncThunk("auth/profile", async (id) => {
+
+  try {
+
+    return await authService.profile(id);
+
+  } catch (error) {
+
+    console.error(error);
+
   }
-);
+
+});
+
+export const updateProfile = createAsyncThunk("auth/updateProfile", async (id) => {
+
+  try {
+
+    return await authService.updateProfile(id);
+
+  } catch (error) {
+
+    console.error(error);
+
+  }
+
+});
+
+export const logout = createAsyncThunk("auth/logout", async () => {
+
+  try {
+
+      return await authService.logout();
+
+  } catch (error) {
+
+      console.error(error);
+
+  }
+
+});
+
 export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(register.fulfilled, (state, action) => {
-      state.isSuccess = true;
-    });
+
+    builder
+
+      .addCase(register.fulfilled, (state, action) => {
+        state.isSuccess = true;
+
+        state.message = action.payload.message;
+      })
+
+      .addCase(login.fulfilled, (state, action) => {
+
+        state.user = action.payload;
+
+      })
+
+      .addCase(logout.fulfilled, (state) => {
+
+        state.user = null;
+
+      })
+
   },
 });
 
