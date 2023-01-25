@@ -18,7 +18,7 @@ export const getAllActivities = createAsyncThunk(
   }
 );
 
-export const getActivityById = createAsyncThunk(
+export const getActivity = createAsyncThunk(
   "activities/getActivityById",
   async (id) => {
     try {
@@ -46,7 +46,7 @@ export const activitySlice = createSlice({
     builder.addCase(getAllActivities.pending, (state, action) => {
       state.isLoading = true;
     });
-    builder.addCase(getActivityById.fulfilled, (state, action) => {
+    builder.addCase(getActivity.fulfilled, (state, action) => {
       state.activities=action.payload
     });
   },

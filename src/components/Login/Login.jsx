@@ -36,14 +36,7 @@ const Login = () => {
 
     e.preventDefault()
     dispatch(login(formData));
-    navigate("/profile");
-  }
-
-  const onCreate = (e) => {
-
-    e.preventDefault();
-
-    navigate("/register");
+    navigate("/");
   }
 
   return (
@@ -69,7 +62,7 @@ const Login = () => {
 
           <button className='access-button'>Acceder</button>
 
-          <button className='createAcc-button' onClick={onCreate}>Crear cuenta</button>
+          <button className='createAcc-button' >Crear cuenta</button>
 
         </div>
       </form>
