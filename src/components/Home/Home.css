@@ -1,5 +1,5 @@
 html{
-    background-color: #afc1ce;
+    background-color: white;
 }
 .iconos-home{
     margin-top: 16vh;
@@ -23,11 +23,10 @@ p{
     font-size: 15px;
 }
 svg{
-    border: 1px solid rgb(0, 0, 0);
     padding: 15px;
     border-radius: 50px;
-    color: rgb(216, 152, 49);
-    background-color: rgb(132, 113, 150);
+    color:#FED049;
+    background-color: #3D4750;
 }
 a{
     all: unset;
