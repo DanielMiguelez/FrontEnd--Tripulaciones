@@ -4,6 +4,7 @@ import activityService from "./activityService";
 const initialState = {
   activities: [],
   isLoading: false,
+  activity: {},
 };
 
 export const getAllActivities = createAsyncThunk(
@@ -17,20 +18,36 @@ export const getAllActivities = createAsyncThunk(
   }
 );
 
+export const getActivity = createAsyncThunk(
+  "activities/getActivityById",
+  async (id) => {
+    try {
+      return await activitySlice.getActivityById(id);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+);
+
 export const activitySlice = createSlice({
   name: "activities",
   initialState,
   reducers: {
-    
+    reset: (state)=>{
+      state.isLoading = false
+    },
   },
 
   extraReducers: (builder) => {
     builder.addCase(getAllActivities.fulfilled, (state, action) => {
-      state.activities = action.payload; 
-      state.isLoading = false
+      state.activities = action.payload;
+      state.isLoading = false;
     });
     builder.addCase(getAllActivities.pending, (state, action) => {
-      state.isLoading = true; 
+      state.isLoading = true;
+    });
+    builder.addCase(getActivity.fulfilled, (state, action) => {
+      state.activities=action.payload
     });
   },
 });
