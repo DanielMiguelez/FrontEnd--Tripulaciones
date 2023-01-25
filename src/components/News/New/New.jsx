@@ -11,8 +11,6 @@ const New = () => {
     dispatch(getAll())
    }, []); 
 
-   console.log(news)
-
    const newN = news.map((a) => {
     if (isLoading){
       return <h1>cargando...</h1>
@@ -20,9 +18,6 @@ const New = () => {
     
     return (
       <div className="newN">
-        {a.image} 
-        <br />
-        <br />
         {a.title}
         <br />
         {a.body}
