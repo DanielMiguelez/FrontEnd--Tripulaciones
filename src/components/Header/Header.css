@@ -2,28 +2,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100px;
-    width: 390px;
+    height: 12vh;
+    width:100%;
     background-color: #3D5656;
 }
 
 .text {
     display: flex;
-    gap: 10px;
-    margin-left: 100px;
+    margin-left: 3.5em;
     justify-content: space-between;
     align-items: center;
     /* border: 1px solid greenyellow; */
-    position: absolute;
     width: 235px;
-    height: 28px;
     font-family: 'P22 Mackinac Pro';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 28px;
-    text-align: center;
     color: #FAFAFA;
 }
