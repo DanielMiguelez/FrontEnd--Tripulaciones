@@ -10,6 +10,7 @@ import Activities from "./components/Activities/Activities";
 import Request from "./components/Request/Request";
 import Header from "./components/Header/Header";
 import NotFound from "./components/NotFound/NotFound";
+import Category from "./components/Request/Category/Category";
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
           <Route path="/request" element={<Request />} />
           <Route path="/new" element={<New />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/requests/category" element={<Category />} />
+          <Route path="/requests/create/:id" element={<Request />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile/:id" element={<Profile/>} />
           <Route path="/updateprofile/:id" element={<EditProfile/>} />
