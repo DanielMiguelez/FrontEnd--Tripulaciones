@@ -10,10 +10,6 @@ const Activity = () => {
 
   const dispatch = useDispatch();
 
-  /*function getAll (){
-    useDispatch(getAllActivities());
-  }*/
-
   useEffect(() => {
     dispatch(getAllActivities());
   }, []);

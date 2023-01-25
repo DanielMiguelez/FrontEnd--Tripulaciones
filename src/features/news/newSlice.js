@@ -10,7 +10,7 @@ export const getAll = createAsyncThunk(
   "news/getAll",
   async () => {
     try {
-      return await newService.getAll();
+      return await newService.getAllNews();
     } catch (error) {
       console.error(error);
     }
