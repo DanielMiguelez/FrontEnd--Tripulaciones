@@ -25,9 +25,9 @@ const Profile = () => {
   const onLogout = (e) => {
     e.preventDefault()
     dispatch(logout())
-    setTimeout(() => {
-      navigate("/login")
-    }, 3000)
+    
+      navigate("/")
+    
   }
 
   if (!user) {
@@ -52,8 +52,8 @@ const Profile = () => {
             <span>{user.user.telephone}</span>
           </div>
           <p>{user.user.email}</p>
-          <Link to="/login" onClick={onLogout}>
-            <button>
+          <Link to="/">
+            <button onClick={onLogout}>
               Cerrar sesión
             </button>
           </Link>
