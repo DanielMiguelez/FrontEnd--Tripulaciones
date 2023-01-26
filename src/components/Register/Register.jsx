@@ -119,7 +119,7 @@ const Register = () => {
             onChange={onChange}
           />
           <br />
-          <button type="submit">Registrate</button>
+          <button type="submit">Regístrate</button>
         </form>
       </div>
     </div>

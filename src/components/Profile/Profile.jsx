@@ -19,6 +19,9 @@ const Profile = () => {
     navigate("/updateProfile/" + id);
   }
 
+  if (!user) {
+    return <p>Cargando...</p>
+  }
   return (
 
     <div className="profile-view">

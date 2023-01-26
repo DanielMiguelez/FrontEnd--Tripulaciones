@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { updateProfile } from "../../features/auth/authSlice";
 
 const EditProfile = () => {
@@ -40,7 +40,7 @@ const EditProfile = () => {
                     <br />
 
                     <div className="name-surname">
-                        <input className="name" type="text" name="name"  />
+                        <input className="name" type="text" name="name" />
                         <input className="surname"
                             type="text"
                             name="surname"
@@ -61,7 +61,7 @@ const EditProfile = () => {
                     <label>Correo electrónico</label>
                     <br />
 
-                    <input type="email" name="email"/>
+                    <input type="email" name="email" />
                     <br />
 
                     <label>Código</label>
@@ -97,7 +97,10 @@ const EditProfile = () => {
                         name="password"
                     />
                     <br />
-                    <button type="submit">Registrate</button>
+                    <Link to="/profile/:id">
+                        <button type="submit">Guardar </button>
+                    </Link>
+
                 </form>
             </div>
         </div>
