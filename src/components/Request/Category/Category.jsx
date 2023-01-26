@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Category.css"
 
 import buildings from "../../../assets/corporate_fare.png"
@@ -10,8 +10,6 @@ import hospital from "../../../assets/local_hospital.png"
 import other from "../../../assets/other_houses.png"
 
 const Category = () => {
-
-  const navigate = useNavigate();
 
   return (
 
