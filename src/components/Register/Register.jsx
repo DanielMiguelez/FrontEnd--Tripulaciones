@@ -5,6 +5,7 @@ import { register } from "../../features/auth/authSlice";
 import "./Register.css";
 
 const Register = () => {
+
   const [formData, setFormData] = useState({
     name: "",
     surname: "",
@@ -36,9 +37,11 @@ const Register = () => {
     }));
   };
 
+  const navigate = useNavigate();
   const onSubmit = (e) => {
     e.preventDefault();
     dispatch(register(formData));
+    navigate("/")
   };
 
   return (
