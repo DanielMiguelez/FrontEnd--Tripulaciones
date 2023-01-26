@@ -34,7 +34,7 @@ const Request = () => {
 
       <div className="header-request">Crear petición</div>
 
-      <input className="name" type="text" name="title"  placeholder="Añadir un título" />
+      <input className="nameregister" type="text" name="title"  placeholder="Añadir un título" />
       <br />
         <form onSubmit={onSubmit}>
           <textarea rows={4} className="textarea" name="body" resize="none"/>
