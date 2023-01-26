@@ -1,7 +1,8 @@
 import React from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import "./Profile.css"
+import { logout } from "../../features/auth/authSlice";
 
 const Profile = () => {
 
@@ -9,7 +10,8 @@ const Profile = () => {
   const { user } = useSelector((state) => state.auth);
 
   console.log(user)
-  const navigate = useNavigate();
+  const navigate = useNavigate()
+  const dispatch = useDispatch()
   const imageUrl = "http://localhost:8080/images/users/" + user.user.image;
 
   const onCreate = (e) => {
@@ -17,6 +19,14 @@ const Profile = () => {
     e.preventDefault();
 
     navigate("/updateProfile/" + id);
+  }
+
+  const onLogout = (e) => {
+    e.preventDefault()
+    dispatch(logout())
+    setTimeout(() => {
+      navigate("/login")
+    }, 3000)
   }
 
   if (!user) {
@@ -37,10 +47,15 @@ const Profile = () => {
 
           <span>{user.user.address}</span>
           <div className="phone-details">
-          <span>(+{user.user.codephone})</span>
-          <span>{user.user.telephone}</span>
+            <span>(+{user.user.codephone})</span>
+            <span>{user.user.telephone}</span>
           </div>
           <p>{user.user.email}</p>
+          <Link to="login" onClick={onLogout}>
+            <button>
+              Cerrar sesión
+            </button>
+          </Link>
         </div>
       </div>
     </div>
