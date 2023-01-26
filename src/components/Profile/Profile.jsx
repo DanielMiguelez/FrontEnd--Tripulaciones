@@ -51,11 +51,12 @@ const Profile = () => {
             <span>{user.user.telephone}</span>
           </div>
           <p>{user.user.email}</p>
-          <Link to="login" onClick={onLogout}>
+          <Link to="/login" onClick={onLogout}>
             <button>
               Cerrar sesión
             </button>
           </Link>
+          
         </div>
       </div>
     </div>
