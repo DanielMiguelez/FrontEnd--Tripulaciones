@@ -52,4 +52,5 @@ export const activitySlice = createSlice({
   },
 });
 
+export const { reset } = activitySlice.actions
 export default activitySlice.reducer;

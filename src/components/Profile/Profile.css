@@ -1,13 +1,13 @@
-.profile-name{
-font-family: "Proxima Nova";
-Font-style: "Semibold";
-Font-size: 16px;
-Line-height: 24px;
-Vertical-align: Top;
-Fill: Solid #3D4750;
+.profile-name {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-style: "Semibold";
+    font-size: 16px;
+    Line-height: 24px;
+    Vertical-align: Top;
+    color: #3D4750;
 }
 
-.profile-view{
+.profile-view {
     display: flex;
     flex: column;
     padding: 1em;
@@ -15,7 +15,13 @@ Fill: Solid #3D4750;
     align-items: center;
 }
 
-.profile-info{
+.profile-info {
     display: flex;
     flex-direction: column;
+}
+
+.button {
+    background: #F2F5F7;
+    border: 1px solid #A1AEB7;
+    border-radius: 6px;
 }
