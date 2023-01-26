@@ -2,14 +2,27 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100px;
 }
 
 .requestsmap-box{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    align-items: center;
+    margin-top: 15px;
+    width: 85%;
+    padding: 25px;
+    border: 1px solid rgb(113, 142, 113);
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
 }
 
 .requests-pics{
-    max-width: 240px;
+ max-width: 240px;
+}
+p{
+    margin-top: -1px;
+    height: 20px;
+    align-self: left;
 }
