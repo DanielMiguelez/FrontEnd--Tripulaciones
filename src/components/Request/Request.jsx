@@ -31,28 +31,27 @@ const Request = () => {
 
   return (
     <div className="requests-container">
+
       <div className="header-request">Crear petición</div>
-      
+
+      <input className="name" type="text" name="title"  placeholder="Añadir un título" />
+      <br />
         <form onSubmit={onSubmit}>
-
-       
-          <input className="name" type="text" name="title"  placeholder="Añadir un título" />
-          
-
           <textarea rows={4} className="textarea" name="body" resize="none"/>
 
           <br />
 
-          <input type="file" name="image" />
+          <input className="file" type="file" name="image" />
          
           <br />
           <input
+          className="location"
             type="text"
             name="address"
             placeholder="Añadir ubicación"
           />
           <br />
-          <button type="submit">Crear</button>
+          <button type="submit">Enviar</button>
         </form>
       </div>
     
