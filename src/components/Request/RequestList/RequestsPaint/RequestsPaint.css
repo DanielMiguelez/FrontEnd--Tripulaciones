@@ -1,0 +1,11 @@
+.requestlist-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.requestsmap-box{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}

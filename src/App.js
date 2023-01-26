@@ -14,6 +14,7 @@ import Category from "./components/Request/Category/Category";
 import News from "./components/News/News";
 import ActivityDetail from "./components/ActivityDetail/ActivityDetail";
 import Confirmation from "./components/Request/Confirmation/Confirmation";
+import RequestList from "./components/Request/RequestList/RequestList";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/requests/category" element={<Category />} />
           <Route path="/requests/create/:id" element={<Request />} />
           <Route path="/requests/confirmation" element={<Confirmation />} />
+          <Route path="/requests/list" element={<RequestList />} />
           <Route path="/news" element={<News/>} />
           <Route path="/login" element={<Login />} />
           <Route path="/activity/:id" element={<ActivityDetail />} />

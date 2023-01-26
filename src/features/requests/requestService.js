@@ -4,8 +4,10 @@ const API_URL = "http://localhost:8000";
 const user = JSON.parse(localStorage.getItem("user"));
 
 const getAll = async () => {
+
     const res = await axios.get(API_URL + "/requests/getAll");
     return res.data
+    
 }
 
 const createRequest = async (test) => {
