@@ -14,6 +14,7 @@ const Profile = () => {
   const dispatch = useDispatch();
 
   const imageUrl = "http://localhost:8000/images/users/" + user.user.image;
+  console.log(user.user.image)
 
   const onCreate = (e) => {
     e.preventDefault();
