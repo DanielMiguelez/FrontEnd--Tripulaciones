@@ -17,7 +17,7 @@ const Confirmation = () => {
       <span className='second-span'>La Asociación de vecinos de Campanar atenderá tu petición lo antes posible.</span>
       </div>
 
-      <Link to="/" ><button className='return'>Volver</button></Link>
+      <Link to="/requests/list" ><button className='return'>Volver</button></Link>
 
     </div>
 
