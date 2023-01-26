@@ -18,7 +18,7 @@ const RequestsPaint = () => {
             return <h1>cargando...</h1>
         }
 
-        const imageUrl = "http://localhost:8000/images/requests/" + a.image;
+        const imageUrl = "http://localhost:8000/images/requests/"
 
         return (
 
@@ -31,7 +31,7 @@ const RequestsPaint = () => {
                     <br />
                     {a.address}
                     <br />
-                    <img  className='requests-pics' src={imageUrl} />
+                    <img  className='requests-pics' src={imageUrl + a.image} />
                 </div>
             </div>
         );
