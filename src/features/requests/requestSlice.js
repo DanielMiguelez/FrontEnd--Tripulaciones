@@ -37,7 +37,7 @@ export const requestsSlice = createSlice({
 
     extraReducers: (builder) => {
         builder.addCase(getAll.fulfilled, (state, action) => {
-            state.activities = action.payload;
+            state.requests = action.payload;
             state.isLoading = false
         });
     },

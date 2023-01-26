@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { createRequest } from "../../features/requests/requestSlice";
 import "./Request.css";
 
@@ -8,6 +8,7 @@ const Request = () => {
 
   const dispatch = useDispatch();
   const { id } = useParams();
+  const navigate = useNavigate();
   
   const onSubmit = (event) => {
     
@@ -23,6 +24,8 @@ const Request = () => {
     console.log(test)
 
     dispatch(createRequest(test));
+
+    navigate("/requests/confirmation")
 
 };
 
