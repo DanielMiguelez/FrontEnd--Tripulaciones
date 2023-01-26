@@ -14,8 +14,6 @@ const RequestsPaint = () => {
 
     const requestN = requests.map((a) => {
 
-        const image = ((a || {}).user || {}).image;
-
         if (isLoading) {
             return <h1>cargando...</h1>
         }
