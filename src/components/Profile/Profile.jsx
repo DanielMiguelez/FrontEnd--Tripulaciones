@@ -12,7 +12,8 @@ const Profile = () => {
   console.log(user)
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const imageUrl = "http://localhost:8080/images/users/" + user.user.image;
+
+  const imageUrl = "http://localhost:8000/images/users/" + user.user.image;
 
   const onCreate = (e) => {
 

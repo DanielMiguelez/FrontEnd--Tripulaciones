@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { login } from "../../features/auth/authSlice";
 import "./Login.css"
 
@@ -60,9 +60,9 @@ const Login = () => {
 
         <div className='login-buttons'>
 
-          <button className='access-button'>Acceder</button>
+          <button className='access-button' type="submit">Acceder</button>
 
-          <button className='createAcc-button' >Crear cuenta</button>
+          <Link to="/register" ><button className='createAcc-button' >Crear cuenta</button></Link>
 
         </div>
       </form>
