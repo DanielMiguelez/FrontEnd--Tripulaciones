@@ -9,3 +9,7 @@
     flex-direction: column;
     gap:20px;
 }
+
+.requests-pics{
+    max-width: 240px;
+}

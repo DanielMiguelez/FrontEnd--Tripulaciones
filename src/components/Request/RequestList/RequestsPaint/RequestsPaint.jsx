@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
+import "./RequestsPaint.css";
 import { getAll } from '../../../../features/requests/requestSlice';
 
 const RequestsPaint = () => {
@@ -13,9 +13,14 @@ const RequestsPaint = () => {
     }, []);
 
     const requestN = requests.map((a) => {
+
+        const image = ((a || {}).user || {}).image;
+
         if (isLoading) {
             return <h1>cargando...</h1>
         }
+
+        const imageUrl = "http://localhost:8000/images/requests/" + a.image;
 
         return (
 
@@ -27,6 +32,8 @@ const RequestsPaint = () => {
                     {a.body}
                     <br />
                     {a.address}
+                    <br />
+                    <img  className='requests-pics' src={imageUrl} />
                 </div>
             </div>
         );
