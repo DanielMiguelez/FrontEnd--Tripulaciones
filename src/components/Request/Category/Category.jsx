@@ -15,7 +15,7 @@ const Category = () => {
 
     <div className='body-categories'>
 
-      <span className='span-categories'>Selecciona la categoría relacionada con tu nueva petición:</span>
+      <span className='span-categories'>Selcciona la categoría relacionada con tu nueva petición:</span>
 
       <div className='all-boxes'>
 
